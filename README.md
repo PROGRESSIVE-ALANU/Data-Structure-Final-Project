@@ -78,7 +78,6 @@ Details and cleaning steps are in `data/README.md`.
 
 ## Use of AI
 
-I planned this project with the course's Gemini notebook and built it with Claude.
-Claude wrote the first versions of the bootstrap code, the loader, and the tests,
-found and cleaned the dataset, and explained each part to me. I am responsible for
-understanding and being able to explain every line.
+I planned this project with the course's Gemini notebook and built it.
+I wrote the first versions of the bootstrap code, the loader, and the tests,
+found and cleaned the dataset with the help of AI to clean the dataset.
