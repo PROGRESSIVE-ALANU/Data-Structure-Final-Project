@@ -27,6 +27,7 @@ player lookup, and a max-heap for the draft board.
 | `data/nba_seasons.csv` | 25,319 real player seasons, 1950 to 2026 (see `data/README.md`) |
 | `loader.py` | Reads the data and builds the tree and the lookup dicts |
 | `loader_test.py` | Unit tests for the loader |
+| `functions.py`, `unit_test.py` | Simple functions with unit tests, requested by the professor |
 
 ## How to run it
 
