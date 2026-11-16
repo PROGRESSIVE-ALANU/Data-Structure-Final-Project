@@ -13,8 +13,8 @@ player lookup, and a max-heap for the draft board.
 | --- | --- |
 | Bootstrap: BST range query, tests, benchmark | Done |
 | Real data and loader (1950 to 2026) | Done |
-| Draft board (max-heap by fantasy score) | Next |
-| Command-line app | Planned |
+| Draft board (max-heap by fantasy score) | Done |
+| Command-line app | Next |
 | Final Big-O write-up and video demo | Planned |
 
 ## What is in the repo
@@ -27,6 +27,9 @@ player lookup, and a max-heap for the draft board.
 | `data/nba_seasons.csv` | 25,319 real player seasons, 1950 to 2026 (see `data/README.md`) |
 | `loader.py` | Reads the data and builds the tree and the lookup dicts |
 | `loader_test.py` | Unit tests for the loader |
+| `max_heap.py` | Max-heap, adapted from the course zyBook heap |
+| `draft.py` | Draft board: fantasy score, best available player, drafting, team scores |
+| `draft_test.py` | Unit tests for the heap and the draft board |
 | `functions.py`, `unit_test.py` | Simple functions with unit tests, requested by the professor |
 
 ## How to run it
@@ -35,7 +38,9 @@ Needs Python 3. The benchmark also needs `pandas` and `matplotlib`.
 
 ```
 python3 loader.py                          # load 2025-26 and run sample queries
+python3 draft.py                           # sample draft on the 2025-26 season
 python3 -m unittest loader_test -v         # loader tests
+python3 -m unittest draft_test -v          # heap and draft board tests
 cd bootstrap
 python3 -m unittest player_bst_test -v     # tree tests
 python3 benchmark.py                       # timing table and benchmark.png
